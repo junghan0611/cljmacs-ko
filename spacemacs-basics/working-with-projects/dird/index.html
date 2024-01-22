@@ -30,7 +30,7 @@
       
       
       <link rel="icon" href="../../../assets/favicon.svg">
-      <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.2.8">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.4">
     
     
       
@@ -38,10 +38,10 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.046329b4.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.50c56a3b.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.85d0ee34.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -129,9 +129,6 @@
     <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="purple" data-md-color-accent="deep-purple">
   
     
-    
-      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
-    
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
@@ -167,47 +164,84 @@
     </div>
     
     
-      
+      <!-- Determine classes -->
+   
 
-  
-
+<!-- Header -->
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../.." title="Practicalli Spacemacs" class="md-header__button md-logo" aria-label="Practicalli Spacemacs" data-md-component="logo">
+    <!-- Link to home -->
+
+    <!-- Button to open drawer -->
+    <label class="md-header__button md-icon" for="__drawer">
+       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+
+    <!-- Custom: Link to Practical.li -->
+    <a
+      href="https://practical.li"
+      title="https://practical.li"
+      class="md-header__button md-logo"
+      aria-label="https://practical.li"
+      data-md-component="logo"
+      target="_blank"
+    >
       
   <img src="../../../assets/images/practicalli-logo.png" alt="logo">
 
     </a>
-    <label class="md-header__button md-icon" for="__drawer">
-      
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
-    </label>
+
+    <!-- Header title -->
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
-          <span class="md-ellipsis">
-            Practicalli Spacemacs
-          </span>
+          <a
+            href="https://practical.li/spacemacs/"
+            title="Practicalli Spacemacs"
+            aria-label="Practicalli Spacemacs"
+          >
+            <span class="md-ellipsis"> Practicalli Spacemacs </span>
+          </a>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
-            
-              dired Emacs directory editor
-            
+             dired Emacs directory editor 
           </span>
         </div>
       </div>
     </div>
-    
-      
-        <form class="md-header__option" data-md-component="palette">
+
+    <!-- Color palette toggle -->
+     
+    <!-- Added to support header.html partial -->
+<!-- - no changes applied -->
+
+<!-- Color palette toggle -->
+<form class="md-header__option" data-md-component="palette">
   
     
     
     
-    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="purple" data-md-color-accent="deep-purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    <input
+      class="md-option"
+      data-md-color-media="(prefers-color-scheme: light)"
+      data-md-color-scheme="default"
+      data-md-color-primary="purple"
+      data-md-color-accent="deep-purple"
+      
+        aria-label="Switch to dark mode"
+      
+      type="radio"
+      name="__palette"
+      id="__palette_1"
+    />
     
-      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+      <label
+        class="md-header__button md-icon"
+        title="Switch to dark mode"
+        for="__palette_2"
+        hidden
+      >
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
       </label>
     
@@ -215,23 +249,43 @@
     
     
     
-    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="deep-purple" data-md-color-accent="purple"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+    <input
+      class="md-option"
+      data-md-color-media="(prefers-color-scheme: dark)"
+      data-md-color-scheme="slate"
+      data-md-color-primary="deep-purple"
+      data-md-color-accent="purple"
+      
+        aria-label="Switch to light mode"
+      
+      type="radio"
+      name="__palette"
+      id="__palette_2"
+    />
     
-      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+      <label
+        class="md-header__button md-icon"
+        title="Switch to light mode"
+        for="__palette_1"
+        hidden
+      >
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
       </label>
     
   
-</form>
-      
+</form>  
+
+    <!-- Site language selector -->
     
+
+    <!-- Button to open search modal -->
     
-    
-      <label class="md-header__button md-icon" for="__search">
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
-      </label>
-      <div class="md-search" data-md-component="search" role="dialog">
+    <label class="md-header__button md-icon" for="__search">
+       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+    </label>
+
+    <!-- Search interface -->
+    <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
@@ -262,22 +316,23 @@
       </div>
     </div>
   </div>
-</div>
+</div> 
+
+    <!-- Repository information -->
     
-    
-      <div class="md-header__source">
-        <a href="https://github.com/practicalli/spacemacs/" title="Go to repository" class="md-source" data-md-component="source" target="_blank">
+    <div class="md-header__source"><a href="https://github.com/practicalli/spacemacs/" title="Go to repository" class="md-source" data-md-component="source" target="_blank">
     <div class="md-source__icon md-icon">
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
     </div>
     <div class="md-source__repository">
         GitHub
     </div>
-</a>
-      </div>
+</a></div>
     
   </nav>
+
+  <!-- Navigation tabs (sticky) -->
   
 </header>
     
@@ -314,7 +369,7 @@
       <a href="https://github.com/practicalli/spacemacs/" title="Go to repository" class="md-source" data-md-component="source" target="_blank">
     <div class="md-source__icon md-icon">
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
     </div>
     <div class="md-source__repository">
         GitHub
@@ -326,6 +381,7 @@
     
       
       
+  
   
   
   
@@ -350,9 +406,10 @@
       
     
     
+    
+    
     <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         
@@ -371,7 +428,8 @@
 
             </a>
             
-              <label class="md-nav__link " for="__nav_1">
+              
+              <label class="md-nav__link " for="__nav_1" id="__nav_1_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
@@ -388,6 +446,7 @@
             
               
                 
+  
   
   
   
@@ -411,6 +470,7 @@
   
   
   
+  
     
     
       
@@ -438,9 +498,10 @@
       
     
     
+    
+    
     <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         
@@ -459,7 +520,8 @@
 
             </a>
             
-              <label class="md-nav__link " for="__nav_1_3">
+              
+              <label class="md-nav__link " for="__nav_1_3" id="__nav_1_3_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
@@ -476,6 +538,7 @@
             
               
                 
+  
   
   
   
@@ -499,6 +562,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../../introduction/why-spacemacs/mnemonic-menu/" class="md-nav__link">
         
@@ -516,6 +580,7 @@
             
               
                 
+  
   
   
   
@@ -539,6 +604,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../../introduction/why-spacemacs/layers/" class="md-nav__link">
         
@@ -556,6 +622,7 @@
             
               
                 
+  
   
   
   
@@ -579,6 +646,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../../introduction/why-spacemacs/structural-editing/" class="md-nav__link">
         
@@ -596,6 +664,7 @@
             
               
                 
+  
   
   
   
@@ -619,6 +688,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../../introduction/why-spacemacs/project-file-navigation/" class="md-nav__link">
         
@@ -636,6 +706,7 @@
             
               
                 
+  
   
   
   
@@ -667,6 +738,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../../spacemacs-mini-cheatsheet/" class="md-nav__link">
         
@@ -684,6 +756,7 @@
             
               
                 
+  
   
   
   
@@ -707,6 +780,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../../introduction/writing-tips/" class="md-nav__link">
         
@@ -724,6 +798,7 @@
             
               
                 
+  
   
   
   
@@ -754,6 +829,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../../install-spacemacs/pre-install/" class="md-nav__link">
         
@@ -773,6 +849,7 @@
   
   
   
+  
     
     
       
@@ -806,9 +883,10 @@
       
     
     
+    
+    
     <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         
@@ -827,7 +905,8 @@
 
             </a>
             
-              <label class="md-nav__link " for="__nav_3">
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
@@ -844,6 +923,7 @@
             
               
                 
+  
   
   
   
@@ -867,6 +947,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../../install-spacemacs/clojure-layer/" class="md-nav__link">
         
@@ -887,6 +968,7 @@
   
   
   
+  
     
     
       
@@ -902,9 +984,10 @@
       
     
     
+    
+    
     <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         
@@ -923,7 +1006,8 @@
 
             </a>
             
-              <label class="md-nav__link " for="__nav_3_4">
+              
+              <label class="md-nav__link " for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
@@ -940,6 +1024,7 @@
             
               
                 
+  
   
   
   
@@ -963,6 +1048,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../../install-spacemacs/enhance-clojure-experience/evil-structural-editing/" class="md-nav__link">
         
@@ -980,6 +1066,7 @@
             
               
                 
+  
   
   
   
@@ -1011,6 +1098,7 @@
   
   
   
+  
     
     
       
@@ -1024,9 +1112,10 @@
       
     
     
+    
+    
     <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         
@@ -1045,7 +1134,8 @@
 
             </a>
             
-              <label class="md-nav__link " for="__nav_3_5">
+              
+              <label class="md-nav__link " for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
@@ -1062,6 +1152,7 @@
             
               
                 
+  
   
   
   
@@ -1082,6 +1173,7 @@
             
               
                 
+  
   
   
   
@@ -1113,6 +1205,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../../install-spacemacs/change-font/" class="md-nav__link">
         
@@ -1130,6 +1223,7 @@
             
               
                 
+  
   
   
   
@@ -1153,6 +1247,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../../install-spacemacs/themes/" class="md-nav__link">
         
@@ -1170,6 +1265,7 @@
             
               
                 
+  
   
   
   
@@ -1193,72 +1289,13 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../../../install-spacemacs/eshell/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Emacs Shell
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_11" >
-        
-          <label class="md-nav__link" for="__nav_3_11" id="__nav_3_11_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    Start Emacs Instantly
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_11_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_11">
-            <span class="md-nav__icon md-icon"></span>
-            Start Emacs Instantly
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
   
     <li class="md-nav__item">
       <a href="../../../install-spacemacs/emacsclient-server/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    emacsclient and persistent server
+    Start Emacs Instantly
   </span>
   
 
@@ -1270,6 +1307,7 @@
             
               
                 
+  
   
   
   
@@ -1278,7 +1316,7 @@
         
   
   <span class="md-ellipsis">
-    Git Commit Message
+    Git Editor
   </span>
   
 
@@ -1288,56 +1326,9 @@
 
               
             
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
               
                 
   
-  
-  
-    
-    
-      
-        
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_12" >
-        
-          <label class="md-nav__link" for="__nav_3_12" id="__nav_3_12_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    Update Spacemacs
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_12_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_12">
-            <span class="md-nav__icon md-icon"></span>
-            Update Spacemacs
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
   
   
   
@@ -1346,7 +1337,7 @@
         
   
   <span class="md-ellipsis">
-    Update Spacemacs and Packages
+    Update Spacemacs
   </span>
   
 
@@ -1359,33 +1350,6 @@
               
                 
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../install-spacemacs/switch-to-develop/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Switch to develop
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
   
   
   
@@ -1418,6 +1382,7 @@
     
   
   
+  
     
     
       
@@ -1435,9 +1400,10 @@
       
     
     
+    
+    
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
-        
         
         
         
@@ -1456,7 +1422,8 @@
 
             </a>
             
-              <label class="md-nav__link " for="__nav_4">
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
@@ -1473,6 +1440,7 @@
             
               
                 
+  
   
   
   
@@ -1498,6 +1466,7 @@
     
   
   
+  
     
     
       
@@ -1527,9 +1496,10 @@
       
     
     
+    
+    
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
-        
         
         
         
@@ -1548,7 +1518,8 @@
 
             </a>
             
-              <label class="md-nav__link " for="__nav_4_3">
+              
+              <label class="md-nav__link " for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
@@ -1568,6 +1539,7 @@
   
   
     
+  
   
   
     <li class="md-nav__item md-nav__item--active">
@@ -1616,43 +1588,29 @@
       
         <li class="md-nav__item">
   <a href="#dired-commands" class="md-nav__link">
-    Dired commands
+    <span class="md-ellipsis">
+      Dired commands
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#rename-files-with-wdired-mode" class="md-nav__link">
-    Rename files with WDired mode
+    <span class="md-ellipsis">
+      Rename files with WDired mode
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Rename files with WDired mode">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#hintsmall-changes-often" class="md-nav__link">
-    Hint::Small changes often
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#emacs-macro-for-multiple-file-renames" class="md-nav__link">
-    Emacs macro for multiple file renames
+    <span class="md-ellipsis">
+      Emacs macro for multiple file renames
+    </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Emacs macro for multiple file renames">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#hintreset-cursor-position-at-end-of-macro" class="md-nav__link">
-    Hint::Reset cursor position at end of macro
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -1672,6 +1630,7 @@
             
               
                 
+  
   
   
   
@@ -1695,6 +1654,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../managing-buffers/" class="md-nav__link">
         
@@ -1712,6 +1672,7 @@
             
               
                 
+  
   
   
   
@@ -1735,12 +1696,13 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../open-and-create-files/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Open and creating Files (and directories)
+    Open and create Files & directories
   </span>
   
 
@@ -1752,6 +1714,7 @@
             
               
                 
+  
   
   
   
@@ -1775,6 +1738,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../ranger/" class="md-nav__link">
         
@@ -1792,6 +1756,7 @@
             
               
                 
+  
   
   
   
@@ -1815,6 +1780,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../tidying-up-buffers/" class="md-nav__link">
         
@@ -1832,6 +1798,7 @@
             
               
                 
+  
   
   
   
@@ -1863,6 +1830,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../visual-select/" class="md-nav__link">
         
@@ -1880,6 +1848,7 @@
             
               
                 
+  
   
   
   
@@ -1910,6 +1879,7 @@
   
   
   
+  
     
     
       
@@ -1935,9 +1905,10 @@
       
     
     
+    
+    
     <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         
@@ -1956,7 +1927,8 @@
 
             </a>
             
-              <label class="md-nav__link " for="__nav_5">
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
@@ -1973,6 +1945,7 @@
             
               
                 
+  
   
   
   
@@ -1996,6 +1969,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../vim-style/key-binding-reference/" class="md-nav__link">
         
@@ -2013,6 +1987,7 @@
             
               
                 
+  
   
   
   
@@ -2036,6 +2011,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../vim-style/vim-quick-reference/" class="md-nav__link">
         
@@ -2053,6 +2029,7 @@
             
               
                 
+  
   
   
   
@@ -2076,6 +2053,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../evil-g-menu/" class="md-nav__link">
         
@@ -2093,6 +2071,7 @@
             
               
                 
+  
   
   
   
@@ -2116,6 +2095,7 @@
   
   
   
+  
     
     
       
@@ -2137,9 +2117,10 @@
       
     
     
+    
+    
     <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         
@@ -2158,7 +2139,8 @@
 
             </a>
             
-              <label class="md-nav__link " for="__nav_5_9">
+              
+              <label class="md-nav__link " for="__nav_5_9" id="__nav_5_9_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
@@ -2175,6 +2157,7 @@
             
               
                 
+  
   
   
   
@@ -2198,6 +2181,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../evil-tools/iedit/" class="md-nav__link">
         
@@ -2215,6 +2199,7 @@
             
               
                 
+  
   
   
   
@@ -2238,6 +2223,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../evil-tools/narrowing/" class="md-nav__link">
         
@@ -2258,6 +2244,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../evil-tools/replacing-text-across-projects/" class="md-nav__link">
         
@@ -2275,6 +2262,7 @@
             
               
                 
+  
   
   
   
@@ -2313,6 +2301,7 @@
   
   
   
+  
     
     
       
@@ -2344,9 +2333,10 @@
       
     
     
+    
+    
     <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         
@@ -2365,7 +2355,8 @@
 
             </a>
             
-              <label class="md-nav__link " for="__nav_6">
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
@@ -2385,6 +2376,7 @@
   
   
   
+  
     
     
       
@@ -2410,9 +2402,10 @@
       
     
     
+    
+    
     <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         
@@ -2431,7 +2424,8 @@
 
             </a>
             
-              <label class="md-nav__link " for="__nav_6_2">
+              
+              <label class="md-nav__link " for="__nav_6_2" id="__nav_6_2_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
@@ -2448,6 +2442,7 @@
             
               
                 
+  
   
   
   
@@ -2471,6 +2466,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../../clojure-repl/connect-to-remote-repl/" class="md-nav__link">
         
@@ -2488,6 +2484,7 @@
             
               
                 
+  
   
   
   
@@ -2511,6 +2508,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../../clojure-repl/portal-data-visualization/" class="md-nav__link">
         
@@ -2528,6 +2526,7 @@
             
               
                 
+  
   
   
   
@@ -2551,12 +2550,13 @@
   
   
   
+  
     <li class="md-nav__item">
-      <a href="../../../clojure-repl/refresh-restart-repl/" class="md-nav__link">
+      <a href="../../../clojure-repl/refresh-repl-state/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Refresh or Restart the REPL
+    Refresh REPL State
   </span>
   
 
@@ -2568,6 +2568,7 @@
             
               
                 
+  
   
   
   
@@ -2588,6 +2589,7 @@
             
               
                 
+  
   
   
   
@@ -2619,6 +2621,7 @@
   
   
   
+  
     
     
       
@@ -2630,9 +2633,10 @@
       
     
     
+    
+    
     <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         
@@ -2651,7 +2655,8 @@
 
             </a>
             
-              <label class="md-nav__link " for="__nav_6_3">
+              
+              <label class="md-nav__link " for="__nav_6_3" id="__nav_6_3_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
@@ -2668,6 +2673,7 @@
             
               
                 
+  
   
   
   
@@ -2699,6 +2705,7 @@
   
   
   
+  
     
     
       
@@ -2716,9 +2723,10 @@
       
     
     
+    
+    
     <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         
@@ -2737,7 +2745,8 @@
 
             </a>
             
-              <label class="md-nav__link " for="__nav_6_4">
+              
+              <label class="md-nav__link " for="__nav_6_4" id="__nav_6_4_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
@@ -2754,6 +2763,7 @@
             
               
                 
+  
   
   
   
@@ -2777,6 +2787,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../../documentation/apropos/" class="md-nav__link">
         
@@ -2797,6 +2808,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../../documentation/cider-doc/" class="md-nav__link">
         
@@ -2814,6 +2826,7 @@
             
               
                 
+  
   
   
   
@@ -2845,6 +2858,7 @@
   
   
   
+  
     
     
       
@@ -2868,9 +2882,10 @@
       
     
     
+    
+    
     <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         
@@ -2889,7 +2904,8 @@
 
             </a>
             
-              <label class="md-nav__link " for="__nav_6_5">
+              
+              <label class="md-nav__link " for="__nav_6_5" id="__nav_6_5_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
@@ -2906,6 +2922,7 @@
             
               
                 
+  
   
   
   
@@ -2929,6 +2946,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../../evaluating-clojure/inspect/" class="md-nav__link">
         
@@ -2946,6 +2964,7 @@
             
               
                 
+  
   
   
   
@@ -2969,6 +2988,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../../evaluating-clojure/undefine/" class="md-nav__link">
         
@@ -2986,6 +3006,7 @@
             
               
                 
+  
   
   
   
@@ -3009,6 +3030,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../../evaluating-clojure/macro-expand/" class="md-nav__link">
         
@@ -3026,6 +3048,7 @@
             
               
                 
+  
   
   
   
@@ -3057,6 +3080,7 @@
   
   
   
+  
     
     
       
@@ -3082,11 +3106,12 @@
       
         
       
+    
+    
     
     
     <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         
@@ -3105,7 +3130,8 @@
 
             </a>
             
-              <label class="md-nav__link " for="__nav_6_6">
+              
+              <label class="md-nav__link " for="__nav_6_6" id="__nav_6_6_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
@@ -3122,6 +3148,7 @@
             
               
                 
+  
   
   
   
@@ -3145,6 +3172,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../../testing/unit-testing/" class="md-nav__link">
         
@@ -3162,6 +3190,7 @@
             
               
                 
+  
   
   
   
@@ -3185,6 +3214,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../../testing/unit-testing/writing-unit-tests/" class="md-nav__link">
         
@@ -3202,6 +3232,7 @@
             
               
                 
+  
   
   
   
@@ -3225,6 +3256,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../../testing/unit-testing/re-run-tests-from-test-report-buffer/" class="md-nav__link">
         
@@ -3245,6 +3277,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../../testing/unit-testing/refactor-unit-tests/" class="md-nav__link">
         
@@ -3262,6 +3295,7 @@
             
               
                 
+  
   
   
   
@@ -3293,6 +3327,7 @@
   
   
   
+  
     
     
       
@@ -3318,9 +3353,10 @@
       
     
     
+    
+    
     <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         
@@ -3339,7 +3375,8 @@
 
             </a>
             
-              <label class="md-nav__link " for="__nav_6_7">
+              
+              <label class="md-nav__link " for="__nav_6_7" id="__nav_6_7_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
@@ -3356,6 +3393,7 @@
             
               
                 
+  
   
   
   
@@ -3379,6 +3417,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../../navigating-code/markers/" class="md-nav__link">
         
@@ -3396,6 +3435,7 @@
             
               
                 
+  
   
   
   
@@ -3419,6 +3459,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../../navigating-code/names-symbols/" class="md-nav__link">
         
@@ -3436,6 +3477,7 @@
             
               
                 
+  
   
   
   
@@ -3459,6 +3501,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../../navigating-code/java-definitions/" class="md-nav__link">
         
@@ -3479,6 +3522,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../../navigating-code/code-folding/" class="md-nav__link">
         
@@ -3496,6 +3540,7 @@
             
               
                 
+  
   
   
   
@@ -3527,6 +3572,7 @@
   
   
   
+  
     
     
       
@@ -3542,9 +3588,10 @@
       
     
     
+    
+    
     <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         
@@ -3563,7 +3610,8 @@
 
             </a>
             
-              <label class="md-nav__link " for="__nav_6_8">
+              
+              <label class="md-nav__link " for="__nav_6_8" id="__nav_6_8_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
@@ -3580,6 +3628,7 @@
             
               
                 
+  
   
   
   
@@ -3603,6 +3652,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../../structural-editing/cleverparens/" class="md-nav__link">
         
@@ -3623,6 +3673,7 @@
   
   
   
+  
     
     
       
@@ -3640,9 +3691,10 @@
       
     
     
+    
+    
     <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         
@@ -3661,7 +3713,8 @@
 
             </a>
             
-              <label class="md-nav__link " for="__nav_6_8_4">
+              
+              <label class="md-nav__link " for="__nav_6_8_4" id="__nav_6_8_4_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
@@ -3678,6 +3731,7 @@
             
               
                 
+  
   
   
   
@@ -3701,6 +3755,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../../structural-editing/lisp-state/slurp-barf/" class="md-nav__link">
         
@@ -3721,6 +3776,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../../structural-editing/lisp-state/deleting/" class="md-nav__link">
         
@@ -3738,6 +3794,7 @@
             
               
                 
+  
   
   
   
@@ -3777,6 +3834,7 @@
   
   
   
+  
     
     
       
@@ -3790,9 +3848,10 @@
       
     
     
+    
+    
     <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         
@@ -3811,7 +3870,8 @@
 
             </a>
             
-              <label class="md-nav__link " for="__nav_6_9">
+              
+              <label class="md-nav__link " for="__nav_6_9" id="__nav_6_9_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
@@ -3831,6 +3891,7 @@
   
   
   
+  
     
     
       
@@ -3844,9 +3905,10 @@
       
     
     
+    
+    
     <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         
@@ -3865,7 +3927,8 @@
 
             </a>
             
-              <label class="md-nav__link " for="__nav_6_9_2">
+              
+              <label class="md-nav__link " for="__nav_6_9_2" id="__nav_6_9_2_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
@@ -3882,6 +3945,7 @@
             
               
                 
+  
   
   
   
@@ -3902,6 +3966,7 @@
             
               
                 
+  
   
   
   
@@ -3933,6 +3998,7 @@
   
   
   
+  
     
     
       
@@ -3952,9 +4018,10 @@
       
     
     
+    
+    
     <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         
@@ -3973,7 +4040,8 @@
 
             </a>
             
-              <label class="md-nav__link " for="__nav_6_9_3">
+              
+              <label class="md-nav__link " for="__nav_6_9_3" id="__nav_6_9_3_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
@@ -3990,6 +4058,7 @@
             
               
                 
+  
   
   
   
@@ -4013,6 +4082,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../../snippets/yasnippets/clojure-snippets-reference/" class="md-nav__link">
         
@@ -4030,6 +4100,7 @@
             
               
                 
+  
   
   
   
@@ -4053,6 +4124,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../../snippets/yasnippets/practicalli-snippets/" class="md-nav__link">
         
@@ -4070,6 +4142,7 @@
             
               
                 
+  
   
   
   
@@ -4109,6 +4182,7 @@
   
   
   
+  
     
     
       
@@ -4128,9 +4202,10 @@
       
     
     
+    
+    
     <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         
@@ -4149,7 +4224,8 @@
 
             </a>
             
-              <label class="md-nav__link " for="__nav_6_10">
+              
+              <label class="md-nav__link " for="__nav_6_10" id="__nav_6_10_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
@@ -4166,6 +4242,7 @@
             
               
                 
+  
   
   
   
@@ -4189,6 +4266,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../../refactor/namespace/" class="md-nav__link">
         
@@ -4206,6 +4284,7 @@
             
               
                 
+  
   
   
   
@@ -4229,6 +4308,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../../refactor/clojure-mode/" class="md-nav__link">
         
@@ -4246,6 +4326,7 @@
             
               
                 
+  
   
   
   
@@ -4277,6 +4358,7 @@
   
   
   
+  
     
     
       
@@ -4300,9 +4382,10 @@
       
     
     
+    
+    
     <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         
@@ -4321,7 +4404,8 @@
 
             </a>
             
-              <label class="md-nav__link " for="__nav_6_11">
+              
+              <label class="md-nav__link " for="__nav_6_11" id="__nav_6_11_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
@@ -4338,6 +4422,7 @@
             
               
                 
+  
   
   
   
@@ -4361,6 +4446,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../../debug-clojure/format-error-messages/" class="md-nav__link">
         
@@ -4378,6 +4464,7 @@
             
               
                 
+  
   
   
   
@@ -4401,6 +4488,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../../debug-clojure/cider-debug/" class="md-nav__link">
         
@@ -4418,6 +4506,7 @@
             
               
                 
+  
   
   
   
@@ -4441,6 +4530,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../../debug-clojure/core-async/" class="md-nav__link">
         
@@ -4458,6 +4548,7 @@
             
               
                 
+  
   
   
   
@@ -4489,6 +4580,7 @@
   
   
   
+  
     
     
       
@@ -4506,9 +4598,10 @@
       
     
     
+    
+    
     <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         
@@ -4527,7 +4620,8 @@
 
             </a>
             
-              <label class="md-nav__link " for="__nav_6_12">
+              
+              <label class="md-nav__link " for="__nav_6_12" id="__nav_6_12_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
@@ -4544,6 +4638,7 @@
             
               
                 
+  
   
   
   
@@ -4567,6 +4662,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../../improving-code/batch-linting/" class="md-nav__link">
         
@@ -4587,6 +4683,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../../improving-code/idiomatic-code-checking/" class="md-nav__link">
         
@@ -4604,6 +4701,7 @@
             
               
                 
+  
   
   
   
@@ -4642,6 +4740,7 @@
   
   
   
+  
     
     
       
@@ -4661,9 +4760,10 @@
       
     
     
+    
+    
     <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         
@@ -4682,7 +4782,8 @@
 
             </a>
             
-              <label class="md-nav__link " for="__nav_7">
+              
+              <label class="md-nav__link " for="__nav_7" id="__nav_7_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
@@ -4699,6 +4800,7 @@
             
               
                 
+  
   
   
   
@@ -4722,6 +4824,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../../source-control/git-configuration/" class="md-nav__link">
         
@@ -4739,6 +4842,7 @@
             
               
                 
+  
   
   
   
@@ -4762,6 +4866,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../../source-control/github-clone/" class="md-nav__link">
         
@@ -4782,6 +4887,7 @@
   
   
   
+  
     
     
       
@@ -4825,9 +4931,10 @@
       
     
     
+    
+    
     <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         
@@ -4846,7 +4953,8 @@
 
             </a>
             
-              <label class="md-nav__link " for="__nav_7_6">
+              
+              <label class="md-nav__link " for="__nav_7_6" id="__nav_7_6_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
@@ -4863,6 +4971,7 @@
             
               
                 
+  
   
   
   
@@ -4886,6 +4995,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../../source-control/magit/list-local-repositories/" class="md-nav__link">
         
@@ -4903,6 +5013,7 @@
             
               
                 
+  
   
   
   
@@ -4926,6 +5037,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../../source-control/magit/branching/" class="md-nav__link">
         
@@ -4943,6 +5055,7 @@
             
               
                 
+  
   
   
   
@@ -4966,6 +5079,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../../source-control/magit/stashing/" class="md-nav__link">
         
@@ -4983,6 +5097,7 @@
             
               
                 
+  
   
   
   
@@ -5006,6 +5121,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../../source-control/magit/tag-commit/" class="md-nav__link">
         
@@ -5023,6 +5139,7 @@
             
               
                 
+  
   
   
   
@@ -5046,6 +5163,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../../source-control/magit/reset-commit-history/" class="md-nav__link">
         
@@ -5063,6 +5181,7 @@
             
               
                 
+  
   
   
   
@@ -5086,6 +5205,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../../source-control/magit/cherry-picking/" class="md-nav__link">
         
@@ -5103,6 +5223,7 @@
             
               
                 
+  
   
   
   
@@ -5126,6 +5247,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../../source-control/magit/clean-up-magit-sessions/" class="md-nav__link">
         
@@ -5143,6 +5265,7 @@
             
               
                 
+  
   
   
   
@@ -5166,6 +5289,7 @@
   
   
   
+  
     
     
       
@@ -5191,9 +5315,10 @@
       
     
     
+    
+    
     <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         
@@ -5212,7 +5337,8 @@
 
             </a>
             
-              <label class="md-nav__link " for="__nav_7_6_17">
+              
+              <label class="md-nav__link " for="__nav_7_6_17" id="__nav_7_6_17_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
@@ -5229,6 +5355,7 @@
             
               
                 
+  
   
   
   
@@ -5252,6 +5379,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../../source-control/magit/remote-repositories/checkout-remote-branch/" class="md-nav__link">
         
@@ -5269,6 +5397,7 @@
             
               
                 
+  
   
   
   
@@ -5292,6 +5421,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../../source-control/magit/remote-repositories/configure-default-push/" class="md-nav__link">
         
@@ -5309,6 +5439,7 @@
             
               
                 
+  
   
   
   
@@ -5332,6 +5463,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../../source-control/magit/remote-repositories/pull-changes/" class="md-nav__link">
         
@@ -5352,6 +5484,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../../source-control/magit/remote-repositories/push-changes/" class="md-nav__link">
         
@@ -5369,6 +5502,7 @@
             
               
                 
+  
   
   
   
@@ -5400,6 +5534,7 @@
   
   
   
+  
     
     
       
@@ -5417,9 +5552,10 @@
       
     
     
+    
+    
     <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         
@@ -5438,7 +5574,8 @@
 
             </a>
             
-              <label class="md-nav__link " for="__nav_7_6_18">
+              
+              <label class="md-nav__link " for="__nav_7_6_18" id="__nav_7_6_18_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
@@ -5455,6 +5592,7 @@
             
               
                 
+  
   
   
   
@@ -5478,6 +5616,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../../source-control/magit/forge/forks/" class="md-nav__link">
         
@@ -5498,6 +5637,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../../source-control/magit/forge/issues/" class="md-nav__link">
         
@@ -5515,6 +5655,7 @@
             
               
                 
+  
   
   
   
@@ -5561,6 +5702,7 @@
   
   
   
+  
     
     
       
@@ -5570,9 +5712,10 @@
       
     
     
+    
+    
     <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         
@@ -5614,6 +5757,7 @@
   
   
   
+  
     
     
       
@@ -5643,11 +5787,12 @@
           
         
       
+    
+    
     
     
     <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         
@@ -5666,7 +5811,8 @@
 
             </a>
             
-              <label class="md-nav__link " for="__nav_9">
+              
+              <label class="md-nav__link " for="__nav_9" id="__nav_9_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
@@ -5683,6 +5829,7 @@
             
               
                 
+  
   
   
   
@@ -5706,6 +5853,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../../org-mode/lists-and-checkboxes/" class="md-nav__link">
         
@@ -5723,6 +5871,7 @@
             
               
                 
+  
   
   
   
@@ -5746,6 +5895,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../../org-mode/todo-states/" class="md-nav__link">
         
@@ -5763,6 +5913,7 @@
             
               
                 
+  
   
   
   
@@ -5786,6 +5937,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../../org-mode/code-blocks/" class="md-nav__link">
         
@@ -5803,6 +5955,7 @@
             
               
                 
+  
   
   
   
@@ -5826,6 +5979,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../../org-mode/org-journal/" class="md-nav__link">
         
@@ -5846,6 +6000,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../../org-mode/yasnippets/" class="md-nav__link">
         
@@ -5863,6 +6018,7 @@
             
               
                 
+  
   
   
   
@@ -5893,6 +6049,7 @@
   
   
   
+  
     
     
       
@@ -5910,9 +6067,10 @@
       
     
     
+    
+    
     <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         
@@ -5931,7 +6089,8 @@
 
             </a>
             
-              <label class="md-nav__link " for="__nav_10">
+              
+              <label class="md-nav__link " for="__nav_10" id="__nav_10_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
@@ -5948,6 +6107,7 @@
             
               
                 
+  
   
   
   
@@ -5971,6 +6131,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../../database-access/connection-configuration/" class="md-nav__link">
         
@@ -5991,6 +6152,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../../database-access/external-dependencies/" class="md-nav__link">
         
@@ -6008,6 +6170,7 @@
             
               
                 
+  
   
   
   
@@ -6038,6 +6201,7 @@
   
   
   
+  
     
     
       
@@ -6061,9 +6225,10 @@
       
     
     
+    
+    
     <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         
@@ -6082,7 +6247,8 @@
 
             </a>
             
-              <label class="md-nav__link " for="__nav_11">
+              
+              <label class="md-nav__link " for="__nav_11" id="__nav_11_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
@@ -6099,6 +6265,7 @@
             
               
                 
+  
   
   
   
@@ -6122,6 +6289,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../../termux/setup/" class="md-nav__link">
         
@@ -6139,6 +6307,7 @@
             
               
                 
+  
   
   
   
@@ -6162,6 +6331,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../../termux/git/" class="md-nav__link">
         
@@ -6179,6 +6349,7 @@
             
               
                 
+  
   
   
   
@@ -6202,6 +6373,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../../termux/clojure-development/" class="md-nav__link">
         
@@ -6219,6 +6391,7 @@
             
               
                 
+  
   
   
   
@@ -6249,6 +6422,7 @@
   
   
   
+  
     
     
       
@@ -6262,9 +6436,10 @@
       
     
     
+    
+    
     <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         
@@ -6283,7 +6458,8 @@
 
             </a>
             
-              <label class="md-nav__link " for="__nav_12">
+              
+              <label class="md-nav__link " for="__nav_12" id="__nav_12_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
@@ -6300,6 +6476,7 @@
             
               
                 
+  
   
   
   
@@ -6320,6 +6497,7 @@
             
               
                 
+  
   
   
   
@@ -6350,6 +6528,7 @@
   
   
   
+  
     
     
       
@@ -6366,18 +6545,6 @@
         
       
         
-          
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
       
         
           
@@ -6393,11 +6560,26 @@
       
         
       
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
     
     
     <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         
@@ -6416,7 +6598,8 @@
 
             </a>
             
-              <label class="md-nav__link " for="__nav_13">
+              
+              <label class="md-nav__link " for="__nav_13" id="__nav_13_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
@@ -6433,6 +6616,28 @@
             
               
                 
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../reference/switch-to-develop/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Switch to Spacemacs develop
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
   
   
   
@@ -6456,6 +6661,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../../reference/spacemacs-conventions/" class="md-nav__link">
         
@@ -6473,6 +6679,7 @@
             
               
                 
+  
   
   
   
@@ -6496,6 +6703,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../../reference/projectile/" class="md-nav__link">
         
@@ -6513,6 +6721,7 @@
             
               
                 
+  
   
   
   
@@ -6536,6 +6745,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../../reference/cider/configuration-variables/" class="md-nav__link">
         
@@ -6556,6 +6766,7 @@
   
   
   
+  
     
     
       
@@ -6575,13 +6786,14 @@
       
     
     
+    
+    
     <li class="md-nav__item md-nav__item--nested">
       
         
         
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_13_8" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_13_9" >
         
           
           
@@ -6596,14 +6808,15 @@
 
             </a>
             
-              <label class="md-nav__link " for="__nav_13_8">
+              
+              <label class="md-nav__link " for="__nav_13_9" id="__nav_13_9_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_13_8_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_13_8">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_13_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_13_9">
             <span class="md-nav__icon md-icon"></span>
             Clojure REPL
           </label>
@@ -6613,6 +6826,7 @@
             
               
                 
+  
   
   
   
@@ -6636,6 +6850,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../../external-repl/switching-to-repl/" class="md-nav__link">
         
@@ -6653,6 +6868,7 @@
             
               
                 
+  
   
   
   
@@ -6676,6 +6892,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../../external-repl/repl-command-menu/" class="md-nav__link">
         
@@ -6693,6 +6910,7 @@
             
               
                 
+  
   
   
   
@@ -6724,6 +6942,7 @@
   
   
   
+  
     
     
       
@@ -6743,13 +6962,14 @@
       
     
     
+    
+    
     <li class="md-nav__item md-nav__item--nested">
       
         
         
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_13_9" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_13_10" >
         
           
           
@@ -6764,14 +6984,15 @@
 
             </a>
             
-              <label class="md-nav__link " for="__nav_13_9">
+              
+              <label class="md-nav__link " for="__nav_13_10" id="__nav_13_10_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_13_9_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_13_9">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_13_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_13_10">
             <span class="md-nav__icon md-icon"></span>
             Clojure Standard Library
           </label>
@@ -6781,6 +7002,7 @@
             
               
                 
+  
   
   
   
@@ -6804,6 +7026,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../../reference/clojure/data-structures/" class="md-nav__link">
         
@@ -6821,6 +7044,7 @@
             
               
                 
+  
   
   
   
@@ -6844,6 +7068,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../../reference/clojure/maths/" class="md-nav__link">
         
@@ -6861,6 +7086,7 @@
             
               
                 
+  
   
   
   
@@ -6892,6 +7118,7 @@
   
   
   
+  
     
     
       
@@ -6903,13 +7130,14 @@
       
     
     
+    
+    
     <li class="md-nav__item md-nav__item--nested">
       
         
         
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_13_10" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_13_11" >
         
           
           
@@ -6924,14 +7152,15 @@
 
             </a>
             
-              <label class="md-nav__link " for="__nav_13_10">
+              
+              <label class="md-nav__link " for="__nav_13_11" id="__nav_13_11_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_13_10_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_13_10">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_13_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_13_11">
             <span class="md-nav__icon md-icon"></span>
             Clojure LSP
           </label>
@@ -6941,6 +7170,7 @@
             
               
                 
+  
   
   
   
@@ -6972,6 +7202,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../../reference/structural-editing/smartparens-cheatsheet/" class="md-nav__link">
         
@@ -6989,6 +7220,7 @@
             
               
                 
+  
   
   
   
@@ -7012,6 +7244,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../../reference/keybindings/cider-keybindings/" class="md-nav__link">
         
@@ -7029,6 +7262,7 @@
             
               
                 
+  
   
   
   
@@ -7052,6 +7286,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../../reference/vim/getting-comfortable/" class="md-nav__link">
         
@@ -7072,6 +7307,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../../reference/vim/key-bindings/" class="md-nav__link">
         
@@ -7089,6 +7325,7 @@
             
               
                 
+  
   
   
   
@@ -7119,6 +7356,7 @@
   
   
   
+  
     
     
       
@@ -7127,20 +7365,23 @@
         
       
         
-          
-        
-      
-        
       
         
           
         
       
+        
+      
+        
+          
+        
+      
+    
+    
     
     
     <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         
@@ -7159,7 +7400,8 @@
 
             </a>
             
-              <label class="md-nav__link " for="__nav_14">
+              
+              <label class="md-nav__link " for="__nav_14" id="__nav_14_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
@@ -7176,6 +7418,28 @@
             
               
                 
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../emacs-lisp/eshell/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Emacs Shell
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
   
   
   
@@ -7199,6 +7463,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../../encryption/create-gpg-key/" class="md-nav__link">
         
@@ -7216,6 +7481,7 @@
             
               
                 
+  
   
   
   
@@ -7246,6 +7512,7 @@
   
   
   
+  
     
     
       
@@ -7259,9 +7526,10 @@
       
     
     
+    
+    
     <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         
@@ -7280,7 +7548,8 @@
 
             </a>
             
-              <label class="md-nav__link " for="__nav_15">
+              
+              <label class="md-nav__link " for="__nav_15" id="__nav_15_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
@@ -7297,6 +7566,7 @@
             
               
                 
+  
   
   
   
@@ -7317,6 +7587,7 @@
             
               
                 
+  
   
   
   
@@ -7347,6 +7618,7 @@
   
   
   
+  
     
     
       
@@ -7354,6 +7626,8 @@
       
         
       
+    
+    
     
     
     <li class="md-nav__item md-nav__item--nested">
@@ -7361,9 +7635,9 @@
         
         
         
-        
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_16" >
         
+          
           <label class="md-nav__link" for="__nav_16" id="__nav_16_label" tabindex="0">
             
   
@@ -7387,6 +7661,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../vim-style/common-evil/" class="md-nav__link">
         
@@ -7404,6 +7679,7 @@
             
               
                 
+  
   
   
   
@@ -7457,43 +7733,29 @@
       
         <li class="md-nav__item">
   <a href="#dired-commands" class="md-nav__link">
-    Dired commands
+    <span class="md-ellipsis">
+      Dired commands
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#rename-files-with-wdired-mode" class="md-nav__link">
-    Rename files with WDired mode
+    <span class="md-ellipsis">
+      Rename files with WDired mode
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Rename files with WDired mode">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#hintsmall-changes-often" class="md-nav__link">
-    Hint::Small changes often
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#emacs-macro-for-multiple-file-renames" class="md-nav__link">
-    Emacs macro for multiple file renames
+    <span class="md-ellipsis">
+      Emacs macro for multiple file renames
+    </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Emacs macro for multiple file renames">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#hintreset-cursor-position-at-end-of-macro" class="md-nav__link">
-    Hint::Reset cursor position at end of macro
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -7536,12 +7798,12 @@
 <h1 id="dired-emacs-directory-editor">dired Emacs directory editor<a class="headerlink" href="#dired-emacs-directory-editor" title="Permanent link">λ︎</a></h1>
 <p>A Dired buffer displays the contents of a single directory or listings of one or more sub-directories. A Dired buffer can display an arbitrary set of files and directories from any file systems.</p>
 <p><code>dired</code> mode is built-in to Emacs (version 23 onward)</p>
-<p><code>SPC f f</code> and select the <code>.</code> root of a directory to open a directory listing in dired</p>
-<p><code>SPC f j</code> or <code>SPC j d</code> to jump to the current buffer in a dired buffer.  <code>SPC j D</code> opens dired buffer in a different window.</p>
+<p><span class="keys"><kbd class="key-space">Space</kbd></span> <span class="keys"><kbd>f</kbd></span> <span class="keys"><kbd>f</kbd></span> and select the <code>.</code> root of a directory to open a directory listing in dired</p>
+<p><span class="keys"><kbd class="key-space">Space</kbd></span> <span class="keys"><kbd>f</kbd></span> <span class="keys"><kbd>j</kbd></span> or <span class="keys"><kbd class="key-space">Space</kbd></span> <span class="keys"><kbd>j</kbd></span> <span class="keys"><kbd>d</kbd></span> to jump to the current buffer in a dired buffer.  <span class="keys"><kbd class="key-space">Space</kbd></span> <span class="keys"><kbd>j</kbd></span> <span class="keys"><kbd>D</kbd></span> opens dired buffer in a different window.</p>
 <p>Use Evil style navigation and editing with the dired buffer</p>
-<p><code>SPC SPC wdired-change-to-wdired-mode</code> WDired mode (writable dired) enables editing of the dired buffer. Names of the files in the buffer, the target of symbolic links and the permission bits of the files can be changed.</p>
+<p><span class="keys"><kbd class="key-space">Space</kbd></span> <span class="keys"><kbd class="key-space">Space</kbd></span> <code>wdired-change-to-wdired-mode</code> WDired mode (writable dired) enables editing of the dired buffer. Names of the files in the buffer, the target of symbolic links and the permission bits of the files can be changed.</p>
 <h2 id="dired-commands">Dired commands<a class="headerlink" href="#dired-commands" title="Permanent link">λ︎</a></h2>
-<p><code>m</code> mark files to run an action across multiple files in the listing</p>
+<p><span class="keys"><kbd>m</kbd></span> mark files to run an action across multiple files in the listing</p>
 <table>
 <thead>
 <tr>
@@ -7551,72 +7813,72 @@
 </thead>
 <tbody>
 <tr>
-<td><code>*</code></td>
+<td><span class="keys"><kbd>*</kbd></span></td>
 <td>mark / unmark meun</td>
 </tr>
 <tr>
-<td><code>R</code></td>
+<td><span class="keys"><kbd>R</kbd></span></td>
 <td>rename a file</td>
 </tr>
 <tr>
-<td><code>C</code></td>
+<td><span class="keys"><kbd>C</kbd></span></td>
 <td>copy file</td>
 </tr>
 <tr>
-<td><code>+</code></td>
+<td><span class="keys"><kbd class="key-plus">+</kbd></span></td>
 <td>make directory</td>
 </tr>
 <tr>
-<td><code>m</code></td>
+<td><span class="keys"><kbd>m</kbd></span></td>
 <td>mark files</td>
 </tr>
 <tr>
-<td><code>u</code></td>
+<td><span class="keys"><kbd>u</kbd></span></td>
 <td>unmark</td>
 </tr>
 <tr>
-<td><code>d</code></td>
+<td><span class="keys"><kbd>d</kbd></span></td>
 <td>flag for deletion</td>
 </tr>
 <tr>
-<td><code>s</code></td>
+<td><span class="keys"><kbd>s</kbd></span></td>
 <td>sort menu</td>
 </tr>
 <tr>
-<td><code>x</code></td>
+<td><span class="keys"><kbd>x</kbd></span></td>
 <td>execute deletions</td>
 </tr>
 <tr>
-<td><code>^ or -</code></td>
+<td><span class="keys"><kbd>^</kbd></span> or <span class="keys"><kbd class="key-minus">-</kbd></span></td>
 <td>move up a directory</td>
 </tr>
 </tbody>
 </table>
 <h2 id="rename-files-with-wdired-mode">Rename files with WDired mode<a class="headerlink" href="#rename-files-with-wdired-mode" title="Permanent link">λ︎</a></h2>
 <p>The names in a dired directory listing can be renamed by editing the file names in the dired buffer and committing the changes.</p>
-<p><code>SPC f f</code> and select the <code>.</code> root of a directory to open a directory listing in dired (or switch to an open dired buffer).</p>
-<p><code>SPC SPC wdired-change-to-wdired-mode</code> to make the dired buffer writable.  The cursor enters insert mode and is placed on the top entry of the directory listing.</p>
+<p><span class="keys"><kbd class="key-space">Space</kbd></span> <span class="keys"><kbd>f</kbd></span> <span class="keys"><kbd>f</kbd></span> and select the <span class="keys"><kbd class="key-period">.</kbd></span> root of a directory to open a directory listing in dired (or switch to an open dired buffer).</p>
+<p><span class="keys"><kbd class="key-space">Space</kbd></span> <span class="keys"><kbd class="key-space">Space</kbd></span> <code>wdired-change-to-wdired-mode</code> to make the dired buffer writable.  The cursor enters insert mode and is placed on the top entry of the directory listing.</p>
 <p>Use <a href="/spacemacs-basics/evil/">Evil style editing</a> to manage changes to the file names.  Some Evil tools and Multiple cursors are not available in the WDired mode, so <a href="/spacemacs-basics/evil/">experience with Evil basics</a> can be very useful.</p>
-<p><code>C-c C-c</code> to commit the changes and update all the affected files.</p>
-<p><code>C-c Esc</code> to cancel all changes.</p>
-<blockquote>
-<h4 id="hintsmall-changes-often">Hint::Small changes often<a class="headerlink" href="#hintsmall-changes-often" title="Permanent link">λ︎</a></h4>
+<p><span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd>c</kbd></span> <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd>c</kbd></span> to commit the changes and update all the affected files.</p>
+<p><span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd>c</kbd></span> <span class="keys"><kbd class="key-escape">Esc</kbd></span> to cancel all changes.</p>
+<div class="admonition hint">
+<p class="admonition-title">Small changes often</p>
 <p>Undo is not available in this mode, so make simple changes and save the results as soon as possible.</p>
-</blockquote>
+</div>
 <h3 id="emacs-macro-for-multiple-file-renames">Emacs macro for multiple file renames<a class="headerlink" href="#emacs-macro-for-multiple-file-renames" title="Permanent link">λ︎</a></h3>
 <p>Record a macro to rename a file and run the macro over multiple lines in the dired buffer in WDired mode.</p>
-<p><code>q a</code> in normal mode will start recording all following key bindings</p>
-<p><code>q</code> again to stop recording and save all the key bindings as a macro bound to the <code>a</code> character.</p>
+<p><span class="keys"><kbd>q</kbd></span> <span class="keys"><kbd>a</kbd></span> in normal mode will start recording all following key bindings</p>
+<p><span class="keys"><kbd>q</kbd></span> again to stop recording and save all the key bindings as a macro bound to the <span class="keys"><kbd>a</kbd></span> character.</p>
 <blockquote>
-<p>Any character other than <code>q</code> can be used as the macro name and Practicalli finds <code>a</code>, <code>z</code> and <code>x</code> as convenient characters for macros.</p>
+<p>Any character other than <span class="keys"><kbd>q</kbd></span> can be used as the macro name and Practicalli finds <span class="keys"><kbd>a</kbd></span>, <span class="keys"><kbd>z</kbd></span> and <span class="keys"><kbd>x</kbd></span> as convenient characters for macros.</p>
 </blockquote>
-<p><code>@ a</code> to run the macro and repeat the same change</p>
-<p><code>24 @ a</code> to run the macro on  the next 24 lines including the current line,  repeating the same change on multiple file names in the dired buffer.</p>
-<blockquote>
-<h4 id="hintreset-cursor-position-at-end-of-macro">Hint::Reset cursor position at end of macro<a class="headerlink" href="#hintreset-cursor-position-at-end-of-macro" title="Permanent link">λ︎</a></h4>
+<p><span class="keys"><kbd>@</kbd></span> <span class="keys"><kbd>a</kbd></span> to run the macro and repeat the same change</p>
+<p><span class="keys"><kbd class="key-2">2</kbd></span> <span class="keys"><kbd class="key-4">4</kbd></span> <span class="keys"><kbd>@</kbd></span> <span class="keys"><kbd>a</kbd></span> to run the macro on  the next 24 lines including the current line,  repeating the same change on multiple file names in the dired buffer.</p>
+<div class="admonition hint">
+<p class="admonition-title">Reset cursor position at end of macro</p>
 <p>If using positional aspects for changes made by the macro ensure the cursor is moved back to the correct starting place just before ending the macro recording.</p>
-<p>Reference: <a href="https://www.masteringemacs.org/article/keyboard-macros-are-misunderstood">Mastering Emacs: Macros</a></p>
-</blockquote>
+<p><a class="md-button" href="https://www.masteringemacs.org/article/keyboard-macros-are-misunderstood" target="_blank"><img alt="🌐" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/1f310.svg" title=":globe_with_meridians:" /> Mastering Emacs: Macros</a></p>
+</div>
 <!--
 TODO: Check Multiple cursors in WDired mode
 
@@ -7627,16 +7889,33 @@ TODO: Check Multiple cursors in WDired mode
 
 -->
 
-  <hr>
-<div class="md-source-file">
-  <small>
+
+
+
+
+
+
+  
     
-      Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 2, 2022</span>
+  
+  
+
+
+  <aside class="md-source-file">
+    
       
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Last update">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 14, 2024</span>
+  </span>
+
     
-  </small>
-</div>
+    
+    
+    
+  </aside>
 
 
   
@@ -7651,13 +7930,14 @@ TODO: Check Multiple cursors in WDired mode
           
   <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
 
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
         
           <button type="button" class="md-top md-icon" data-md-component="top" hidden>
-            
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
-            Back to top
-          </button>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
         
       </main>
       
@@ -7668,7 +7948,7 @@ TODO: Check Multiple cursors in WDired mode
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: Working with Projects" rel="prev">
+          <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: Working with Projects">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -7685,7 +7965,7 @@ TODO: Check Multiple cursors in WDired mode
         
         
           
-          <a href="../layouts/" class="md-footer__link md-footer__link--next" aria-label="Next: Layouts and Workspaces" rel="next">
+          <a href="../layouts/" class="md-footer__link md-footer__link--next" aria-label="Next: Layouts and Workspaces">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
@@ -7729,7 +8009,7 @@ TODO: Check Multiple cursors in WDired mode
       
     
     <a href="https://www.linkedin.com/in/jr0cket/" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
     </a>
   
     
@@ -7740,7 +8020,7 @@ TODO: Check Multiple cursors in WDired mode
       
     
     <a href="https://clojurians.slack.com/messages/practicalli" target="_blank" rel="noopener" title="clojurians.slack.com" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M94.12 315.1c0 25.9-21.16 47.06-47.06 47.06S0 341 0 315.1c0-25.9 21.16-47.06 47.06-47.06h47.06v47.06zm23.72 0c0-25.9 21.16-47.06 47.06-47.06s47.06 21.16 47.06 47.06v117.84c0 25.9-21.16 47.06-47.06 47.06s-47.06-21.16-47.06-47.06V315.1zm47.06-188.98c-25.9 0-47.06-21.16-47.06-47.06S139 32 164.9 32s47.06 21.16 47.06 47.06v47.06H164.9zm0 23.72c25.9 0 47.06 21.16 47.06 47.06s-21.16 47.06-47.06 47.06H47.06C21.16 243.96 0 222.8 0 196.9s21.16-47.06 47.06-47.06H164.9zm188.98 47.06c0-25.9 21.16-47.06 47.06-47.06 25.9 0 47.06 21.16 47.06 47.06s-21.16 47.06-47.06 47.06h-47.06V196.9zm-23.72 0c0 25.9-21.16 47.06-47.06 47.06-25.9 0-47.06-21.16-47.06-47.06V79.06c0-25.9 21.16-47.06 47.06-47.06 25.9 0 47.06 21.16 47.06 47.06V196.9zM283.1 385.88c25.9 0 47.06 21.16 47.06 47.06 0 25.9-21.16 47.06-47.06 47.06-25.9 0-47.06-21.16-47.06-47.06v-47.06h47.06zm0-23.72c-25.9 0-47.06-21.16-47.06-47.06 0-25.9 21.16-47.06 47.06-47.06h117.84c25.9 0 47.06 21.16 47.06 47.06 0 25.9-21.16 47.06-47.06 47.06H283.1z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M94.12 315.1c0 25.9-21.16 47.06-47.06 47.06S0 341 0 315.1c0-25.9 21.16-47.06 47.06-47.06h47.06v47.06zm23.72 0c0-25.9 21.16-47.06 47.06-47.06s47.06 21.16 47.06 47.06v117.84c0 25.9-21.16 47.06-47.06 47.06s-47.06-21.16-47.06-47.06V315.1zm47.06-188.98c-25.9 0-47.06-21.16-47.06-47.06S139 32 164.9 32s47.06 21.16 47.06 47.06v47.06H164.9zm0 23.72c25.9 0 47.06 21.16 47.06 47.06s-21.16 47.06-47.06 47.06H47.06C21.16 243.96 0 222.8 0 196.9s21.16-47.06 47.06-47.06H164.9zm188.98 47.06c0-25.9 21.16-47.06 47.06-47.06 25.9 0 47.06 21.16 47.06 47.06s-21.16 47.06-47.06 47.06h-47.06V196.9zm-23.72 0c0 25.9-21.16 47.06-47.06 47.06-25.9 0-47.06-21.16-47.06-47.06V79.06c0-25.9 21.16-47.06 47.06-47.06 25.9 0 47.06 21.16 47.06 47.06V196.9zM283.1 385.88c25.9 0 47.06 21.16 47.06 47.06 0 25.9-21.16 47.06-47.06 47.06-25.9 0-47.06-21.16-47.06-47.06v-47.06h47.06zm0-23.72c-25.9 0-47.06-21.16-47.06-47.06 0-25.9 21.16-47.06 47.06-47.06h117.84c25.9 0 47.06 21.16 47.06 47.06 0 25.9-21.16 47.06-47.06 47.06H283.1z"/></svg>
     </a>
   
     
@@ -7751,7 +8031,7 @@ TODO: Check Multiple cursors in WDired mode
       
     
     <a href="https://twitter.com/practical_li" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
     </a>
   
     
@@ -7762,7 +8042,7 @@ TODO: Check Multiple cursors in WDired mode
       
     
     <a href="https://github.com/practicalli" target="_blank" rel="noopener" title="github.com" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
     </a>
   
     
@@ -7773,7 +8053,7 @@ TODO: Check Multiple cursors in WDired mode
       
     
     <a href="https://hub.docker.com/u/practicalli" target="_blank" rel="noopener" title="hub.docker.com" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M349.9 236.3h-66.1v-59.4h66.1v59.4zm0-204.3h-66.1v60.7h66.1V32zm78.2 144.8H362v59.4h66.1v-59.4zm-156.3-72.1h-66.1v60.1h66.1v-60.1zm78.1 0h-66.1v60.1h66.1v-60.1zm276.8 100c-14.4-9.7-47.6-13.2-73.1-8.4-3.3-24-16.7-44.9-41.1-63.7l-14-9.3-9.3 14c-18.4 27.8-23.4 73.6-3.7 103.8-8.7 4.7-25.8 11.1-48.4 10.7H2.4c-8.7 50.8 5.8 116.8 44 162.1 37.1 43.9 92.7 66.2 165.4 66.2 157.4 0 273.9-72.5 328.4-204.2 21.4.4 67.6.1 91.3-45.2 1.5-2.5 6.6-13.2 8.5-17.1l-13.3-8.9zm-511.1-27.9h-66v59.4h66.1v-59.4zm78.1 0h-66.1v59.4h66.1v-59.4zm78.1 0h-66.1v59.4h66.1v-59.4zm-78.1-72.1h-66.1v60.1h66.1v-60.1z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M349.9 236.3h-66.1v-59.4h66.1v59.4zm0-204.3h-66.1v60.7h66.1V32zm78.2 144.8H362v59.4h66.1v-59.4zm-156.3-72.1h-66.1v60.1h66.1v-60.1zm78.1 0h-66.1v60.1h66.1v-60.1zm276.8 100c-14.4-9.7-47.6-13.2-73.1-8.4-3.3-24-16.7-44.9-41.1-63.7l-14-9.3-9.3 14c-18.4 27.8-23.4 73.6-3.7 103.8-8.7 4.7-25.8 11.1-48.4 10.7H2.4c-8.7 50.8 5.8 116.8 44 162.1 37.1 43.9 92.7 66.2 165.4 66.2 157.4 0 273.9-72.5 328.4-204.2 21.4.4 67.6.1 91.3-45.2 1.5-2.5 6.6-13.2 8.5-17.1l-13.3-8.9zm-511.1-27.9h-66v59.4h66.1v-59.4zm78.1 0h-66.1v59.4h66.1v-59.4zm78.1 0h-66.1v59.4h66.1v-59.4zm-78.1-72.1h-66.1v60.1h66.1v-60.1z"/></svg>
     </a>
   
 </div>
@@ -7787,10 +8067,11 @@ TODO: Check Multiple cursors in WDired mode
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["announce.dismiss", "content.action.edit", "content.action.view", "content.code.annotate", "content.code.copy", "content.tabs.link", "navigation.footer", "navigation.indexes", "navigation.instant", "navigation.top", "navigation.tracking"], "search": "../../../assets/javascripts/workers/search.dfff1995.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["announce.dismiss", "content.action.edit", "content.action.view", "content.code.annotate", "content.code.copy", "content.tabs.link", "navigation.footer", "navigation.indexes", "navigation.instant", "navigation.top", "navigation.tracking"], "search": "../../../assets/javascripts/workers/search.c011b7c0.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.dff1b7c8.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.7389ff0e.min.js"></script>
       
     
   <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
